@@ -1,6 +1,8 @@
 // src/App.tsx
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
+import { ThemeProvider } from './contexts/ThemeContext';
+import { useTheme } from './contexts/ThemeContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -10,11 +12,13 @@ import Dashboard from './pages/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import './App.css';
 
-function App() {
+function AppContent() {
+  const { isDarkMode } = useTheme();
+
   return (
     <Router>
       <AuthProvider>
-        <div className="app-container">
+        <div className={`app-container ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
           <Navbar />
           <main className="main-content">
             <Routes>
@@ -36,6 +40,14 @@ function App() {
         </div>
       </AuthProvider>
     </Router>
+  );
+}
+
+function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   );
 }
 

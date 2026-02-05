@@ -1,16 +1,19 @@
 // src/components/Footer.tsx
 import { Link } from 'react-router-dom';
+import { useTheme } from '../contexts/ThemeContext';
 
 export default function Footer() {
+  const { isDarkMode } = useTheme();
   const currentYear = new Date().getFullYear();
 
   return (
     <footer style={{
-      backgroundColor: '#1b5e20',
+      backgroundColor: isDarkMode ? '#1a1a1a' : '#1b5e20',
       color: 'white',
       padding: '2rem',
       marginTop: 'auto',
       textAlign: 'center',
+      borderTop: isDarkMode ? '1px solid rgba(255, 255, 255, 0.15)' : 'none',
     }}>
       <div style={{
         maxWidth: '1200px',
