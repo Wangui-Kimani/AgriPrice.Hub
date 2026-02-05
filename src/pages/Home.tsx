@@ -254,7 +254,13 @@ export default function Home() {
               </div>
             </div>
             
-            <d  <div className="step-visual-label">Get Started</div>
+            <div className="visual-step">
+              <div className="step-visual">
+                <div className="step-number">3</div>
+                <div className="step-icon">
+                  <i className="fas fa-rocket"></i>
+                </div>
+                <div className="step-visual-label">Get Started</div>
               </div>
               <div className="step-content">
                 <h3>Start Connecting</h3>
@@ -263,13 +269,7 @@ export default function Home() {
                   <span>🌾 Browse marketplace</span>
                   <span>🤝 Connect partners</span>
                   <span>📈 Grow business</span>
-                </div
-                  <i className="fas fa-rocket"></i>
                 </div>
-              </div>
-              <div className="step-content">
-                <h3>Start Connecting</h3>
-                <p>Access the marketplace, connect with partners, and grow your agricultural business.</p>
               </div>
             </div>
           </div>
