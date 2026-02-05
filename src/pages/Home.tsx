@@ -7,8 +7,7 @@ export default function Home() {
   const [stats, setStats] = useState({
     farmers: 1250,
     dealers: 320,
-    officers: 85,
-    transactions: 5400
+    officers: 85
   });
 
   // Animated counter effect
@@ -17,8 +16,7 @@ export default function Home() {
       setStats(prev => ({
         farmers: prev.farmers < 1500 ? prev.farmers + 5 : prev.farmers,
         dealers: prev.dealers < 400 ? prev.dealers + 2 : prev.dealers,
-        officers: prev.officers < 100 ? prev.officers + 1 : prev.officers,
-        transactions: prev.transactions < 6000 ? prev.transactions + 10 : prev.transactions
+        officers: prev.officers < 100 ? prev.officers + 1 : prev.officers
       }));
     }, 100);
     return () => clearInterval(interval);
@@ -99,10 +97,6 @@ export default function Home() {
                 <div className="stat-value">{stats.officers}+</div>
                 <div className="stat-label">Officers</div>
               </div>
-              <div className="stat-item">
-                <div className="stat-value">KSh {stats.transactions}M+</div>
-                <div className="stat-label">Transactions</div>
-              </div>
             </div>
 
             {/* Main CTA */}
@@ -169,7 +163,7 @@ export default function Home() {
                 <li><i className="fas fa-check"></i> Direct market access</li>
                 <li><i className="fas fa-check"></i> Real-time price alerts</li>
                 <li><i className="fas fa-check"></i> Weather advisory</li>
-                <li><i className="fas fa-check"></i> Mobile payments</li>
+                <li><i className="fas fa-check"></i> Secure listings</li>
               </ul>
               <div className="role-cta">
                 <span className="join-link">Join {stats.farmers}+ Farmers <i className="fas fa-arrow-right"></i></span>
@@ -228,10 +222,16 @@ export default function Home() {
                 <div className="step-icon">
                   <i className="fas fa-user-plus"></i>
                 </div>
+                <div className="step-visual-label">Quick Sign Up</div>
               </div>
               <div className="step-content">
                 <h3>Sign Up Free</h3>
                 <p>Choose your role (Farmer, Dealer, or Officer) and create your account in 2 minutes. No credit card required.</p>
+                <div className="step-highlights">
+                  <span>📝 Fill simple form</span>
+                  <span>🎯 Choose your role</span>
+                  <span>⚡ Instant activation</span>
+                </div>
               </div>
             </div>
             
@@ -241,23 +241,35 @@ export default function Home() {
                 <div className="step-icon">
                   <i className="fas fa-id-card"></i>
                 </div>
+                <div className="step-visual-label">Identity Verification</div>
               </div>
               <div className="step-content">
                 <h3>Verify Profile</h3>
                 <p>Upload your ID for verification. Get approved within 24 hours and unlock full platform access.</p>
+                <div className="step-highlights">
+                  <span>🪪 Submit ID scan</span>
+                  <span>✅ Quick approval</span>
+                  <span>🔒 Secure verification</span>
+                </div>
               </div>
             </div>
             
-            <div className="visual-step">
-              <div className="step-visual">
-                <div className="step-number">3</div>
-                <div className="step-icon">
+            <d  <div className="step-visual-label">Get Started</div>
+              </div>
+              <div className="step-content">
+                <h3>Start Connecting</h3>
+                <p>Access the marketplace, connect with partners, and grow your agricultural business.</p>
+                <div className="step-highlights">
+                  <span>🌾 Browse marketplace</span>
+                  <span>🤝 Connect partners</span>
+                  <span>📈 Grow business</span>
+                </div
                   <i className="fas fa-rocket"></i>
                 </div>
               </div>
               <div className="step-content">
-                <h3>Start Trading</h3>
-                <p>Access the marketplace, connect with partners, and make your first transaction immediately.</p>
+                <h3>Start Connecting</h3>
+                <p>Access the marketplace, connect with partners, and grow your agricultural business.</p>
               </div>
             </div>
           </div>
