@@ -1,7 +1,7 @@
 // src/pages/Signup.tsx - Updated for multiple roles
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import './Pages.css';
+import './pages.css';
 
 export default function Signup() {
   const location = useLocation();

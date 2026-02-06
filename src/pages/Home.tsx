@@ -1,7 +1,7 @@
 // src/pages/Home.tsx - Clean and focused version
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import './Pages.css';
+import './pages.css';
 
 export default function Home() {
   const [stats, setStats] = useState({
@@ -148,7 +148,7 @@ export default function Home() {
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">Choose Your <span className="highlight">Success Path</span></h2>
-            <p className="section-subtitle">Tailored solutions for every agricultural stakeholder</p>
+            <p className="section-subtitle">Empower your agricultural journey with role-specific tools and features</p>
           </div>
           
           <div className="role-cards-container">
@@ -160,10 +160,10 @@ export default function Home() {
               <h3>Farmer</h3>
               <p className="role-price">Free Forever</p>
               <ul className="role-features">
-                <li><i className="fas fa-check"></i> Direct market access</li>
-                <li><i className="fas fa-check"></i> Real-time price alerts</li>
-                <li><i className="fas fa-check"></i> Weather advisory</li>
-                <li><i className="fas fa-check"></i> Secure listings</li>
+                <li><i className="fas fa-check"></i> Farmer Dashboard</li>
+                <li><i className="fas fa-check"></i> Real-time Market Prices</li>
+                <li><i className="fas fa-check"></i> Product Search</li>
+                <li><i className="fas fa-check"></i> Price Monitoring</li>
               </ul>
               <div className="role-cta">
                 <span className="join-link">Join {stats.farmers}+ Farmers <i className="fas fa-arrow-right"></i></span>
@@ -175,12 +175,12 @@ export default function Home() {
                 <i className="fas fa-store"></i>
               </div>
               <h3>Agro-Dealer</h3>
-              <p className="role-price">Premium Features</p>
+              <p className="role-price">Full Features</p>
               <ul className="role-features">
-                <li><i className="fas fa-check"></i> Supplier network</li>
-                <li><i className="fas fa-check"></i> Inventory management</li>
-                <li><i className="fas fa-check"></i> Market analytics</li>
-                <li><i className="fas fa-check"></i> Bulk purchasing</li>
+                <li><i className="fas fa-check"></i> Dealer Dashboard</li>
+                <li><i className="fas fa-check"></i> Product Catalog Management</li>
+                <li><i className="fas fa-check"></i> Add & Manage Products</li>
+                <li><i className="fas fa-check"></i> Order Management</li>
               </ul>
               <div className="role-cta">
                 <span className="join-link">Join {stats.dealers}+ Dealers <i className="fas fa-arrow-right"></i></span>
@@ -192,12 +192,12 @@ export default function Home() {
                 <i className="fas fa-user-tie"></i>
               </div>
               <h3>Market Officer</h3>
-              <p className="role-price">Enterprise Tools</p>
+              <p className="role-price">Admin Tools</p>
               <ul className="role-features">
-                <li><i className="fas fa-check"></i> Market oversight</li>
-                <li><i className="fas fa-check"></i> Compliance tools</li>
-                <li><i className="fas fa-check"></i> Data reporting</li>
-                <li><i className="fas fa-check"></i> Team management</li>
+                <li><i className="fas fa-check"></i> Officer Dashboard</li>
+                <li><i className="fas fa-check"></i> Price Submission</li>
+                <li><i className="fas fa-check"></i> Market Reports</li>
+                <li><i className="fas fa-check"></i> Price Management</li>
               </ul>
               <div className="role-cta">
                 <span className="join-link">Join {stats.officers}+ Officers <i className="fas fa-arrow-right"></i></span>
