@@ -3102,3 +3102,263 @@
   color: #666;
   margin-top: 5px;
 }
+
+/* Role-specific signup form highlighting */
+.user-type-indicator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.type-badge.officer {
+  background: linear-gradient(135deg, #1976d2, #1565c0);
+  color: white;
+  box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3);
+}
+
+.type-badge.dealer {
+  background: linear-gradient(135deg, #f57c00, #e65100);
+  color: white;
+  box-shadow: 0 4px 15px rgba(245, 124, 0, 0.3);
+}
+
+.type-badge.farmer {
+  background: linear-gradient(135deg, #388e3c, #2e7d32);
+  color: white;
+  box-shadow: 0 4px 15px rgba(56, 142, 60, 0.3);
+}
+
+/* Form role-specific border highlight */
+.auth-form.form-officer {
+  border-left: 5px solid #1976d2;
+}
+
+.auth-form.form-dealer {
+  border-left: 5px solid #f57c00;
+}
+
+.auth-form.form-farmer {
+  border-left: 5px solid #388e3c;
+}
+
+/* Button styling by role */
+.btn-auth.officer {
+  background: linear-gradient(135deg, #1976d2, #1565c0);
+}
+
+.btn-auth.officer:hover {
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(25, 118, 210, 0.3);
+}
+
+.btn-auth.dealer {
+  background: linear-gradient(135deg, #f57c00, #e65100);
+}
+
+.btn-auth.dealer:hover {
+  background: linear-gradient(135deg, #e65100, #d84315);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(245, 124, 0, 0.3);
+}
+
+.btn-auth.farmer {
+  background: linear-gradient(135deg, #388e3c, #2e7d32);
+}
+
+.btn-auth.farmer:hover {
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(56, 142, 60, 0.3);
+}
+
+/* Role switch section styling */
+.switch-role {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.switch-role p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.role-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.role-links a {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid;
+  text-decoration: none;
+}
+
+.role-links a:nth-child(1) {
+  color: #1976d2;
+  border-color: #1976d2;
+  background: rgba(25, 118, 210, 0.05);
+}
+
+.role-links a:nth-child(1):hover {
+  background: rgba(25, 118, 210, 0.1);
+}
+
+.role-links a:nth-child(2) {
+  color: #f57c00;
+  border-color: #f57c00;
+  background: rgba(245, 124, 0, 0.05);
+}
+
+.role-links a:nth-child(2):hover {
+  background: rgba(245, 124, 0, 0.1);
+}
+
+.role-links a:nth-child(3) {
+  color: #388e3c;
+  border-color: #388e3c;
+  background: rgba(56, 142, 60, 0.05);
+}
+
+.role-links a:nth-child(3):hover {
+  background: rgba(56, 142, 60, 0.1);
+}
+
+/* Dark mode role-specific styling */
+[data-theme="dark"] .type-badge.officer {
+  background: linear-gradient(135deg, #42a5f5, #2196f3);
+  box-shadow: 0 4px 15px rgba(66, 165, 245, 0.3);
+}
+
+[data-theme="dark"] .type-badge.dealer {
+  background: linear-gradient(135deg, #ffb74d, #ffa726);
+  box-shadow: 0 4px 15px rgba(255, 183, 77, 0.3);
+}
+
+[data-theme="dark"] .type-badge.farmer {
+  background: linear-gradient(135deg, #66bb6a, #4caf50);
+  box-shadow: 0 4px 15px rgba(102, 187, 106, 0.3);
+}
+
+[data-theme="dark"] .auth-form.form-officer {
+  border-left-color: #42a5f5;
+}
+
+[data-theme="dark"] .auth-form.form-dealer {
+  border-left-color: #ffb74d;
+}
+
+[data-theme="dark"] .auth-form.form-farmer {
+  border-left-color: #66bb6a;
+}
+
+[data-theme="dark"] .switch-role p {
+  color: #b0b0b0;
+}
+
+[data-theme="dark"] .switch-role {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .role-links a:nth-child(1) {
+  color: #42a5f5;
+  border-color: #42a5f5;
+  background: rgba(66, 165, 245, 0.1);
+}
+
+[data-theme="dark"] .role-links a:nth-child(2) {
+  color: #ffb74d;
+  border-color: #ffb74d;
+  background: rgba(255, 183, 77, 0.1);
+}
+
+[data-theme="dark"] .role-links a:nth-child(3) {
+  color: #66bb6a;
+  border-color: #66bb6a;
+  background: rgba(102, 187, 106, 0.1);
+}
+
+/* Outline button role-specific styling */
+.btn-outline.btn-officer {
+  color: #1976d2;
+  border-color: #1976d2;
+  background: rgba(25, 118, 210, 0.05);
+}
+
+.btn-outline.btn-officer:hover {
+  background: rgba(25, 118, 210, 0.15);
+  color: #1565c0;
+}
+
+.btn-outline.btn-dealer {
+  color: #f57c00;
+  border-color: #f57c00;
+  background: rgba(245, 124, 0, 0.05);
+}
+
+.btn-outline.btn-dealer:hover {
+  background: rgba(245, 124, 0, 0.15);
+  color: #e65100;
+}
+
+.btn-outline.btn-farmer {
+  color: #388e3c;
+  border-color: #388e3c;
+  background: rgba(56, 142, 60, 0.05);
+}
+
+.btn-outline.btn-farmer:hover {
+  background: rgba(56, 142, 60, 0.15);
+  color: #2e7d32;
+}
+
+[data-theme="dark"] .btn-outline.btn-officer {
+  color: #42a5f5;
+  border-color: #42a5f5;
+  background: rgba(66, 165, 245, 0.1);
+}
+
+[data-theme="dark"] .btn-outline.btn-officer:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
+[data-theme="dark"] .btn-outline.btn-dealer {
+  color: #ffb74d;
+  border-color: #ffb74d;
+  background: rgba(255, 183, 77, 0.1);
+}
+
+[data-theme="dark"] .btn-outline.btn-dealer:hover {
+  background: rgba(255, 183, 77, 0.2);
+}
+
+[data-theme="dark"] .btn-outline.btn-farmer {
+  color: #66bb6a;
+  border-color: #66bb6a;
+  background: rgba(102, 187, 106, 0.1);
+}
+
+[data-theme="dark"] .btn-outline.btn-farmer:hover {
+  background: rgba(102, 187, 106, 0.2);
+}
