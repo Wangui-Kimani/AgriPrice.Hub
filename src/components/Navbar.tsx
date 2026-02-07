@@ -42,7 +42,7 @@ export default function Navbar() {
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
         <Link to="/" style={{ color: 'white', textDecoration: 'none', fontSize: '1.5rem', fontWeight: 'bold' }}>
-          🌾 Agri Market
+          🌾 Agri price
         </Link>
         
         {/* Navigation Links */}
@@ -50,12 +50,6 @@ export default function Navbar() {
           <Link to="/" style={linkStyle('/')}>
             Home
           </Link>
-          
-          {user && (
-            <Link to="/dashboard" style={linkStyle('/dashboard')}>
-              Dashboard
-            </Link>
-          )}
         </div>
       </div>
       

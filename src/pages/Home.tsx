@@ -37,16 +37,9 @@ export default function Home() {
           <nav className="navbar">
             <div className="logo">
               <i className="fas fa-tractor"></i>
-              <span>Agri Price</span>
-            </div>
-            <div className="nav-links">
-              <Link to="/" className="nav-link active">Home</Link>
-              <Link to="/login" className="nav-link">Log In</Link>
+              <span>Agri price</span>
             </div>
             <div className="auth-buttons">
-              <Link to="/login" className="btn btn-outline">
-                <i className="fas fa-sign-in-alt"></i> Log In
-              </Link>
               <div className="dropdown">
                 <button className="btn btn-primary dropdown-toggle glow-effect">
                   <i className="fas fa-user-plus"></i> Join Now
@@ -99,18 +92,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Main CTA */}
-            <div className="hero-actions">
-              <Link to="/signup" className="btn btn-primary btn-large pulse-effect">
-                <i className="fas fa-rocket"></i> Start Free Trial
-              </Link>
-            </div>
+            {/* Main CTA removed */}
             
-            <div className="trust-badges">
-              <span><i className="fas fa-check-circle"></i> No credit card required</span>
-              <span><i className="fas fa-check-circle"></i> 30-day free trial</span>
-              <span><i className="fas fa-check-circle"></i> Cancel anytime</span>
-            </div>
+            {/* trust badges removed */}
           </div>
           
           <div className="hero-image">
@@ -226,7 +210,7 @@ export default function Home() {
               </div>
               <div className="step-content">
                 <h3>Sign Up Free</h3>
-                <p>Choose your role (Farmer, Dealer, or Officer) and create your account in 2 minutes. No credit card required.</p>
+                <p>Choose your role (Farmer, Dealer, or Officer) and create your account in 2 minutes.</p>
                 <div className="step-highlights">
                   <span>📝 Fill simple form</span>
                   <span>🎯 Choose your role</span>
@@ -298,12 +282,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="cta-buttons">
-              <Link to="/signup" className="btn btn-primary btn-xlarge pulse-effect">
-                <i className="fas fa-gem"></i> Start Free Trial
-                <span className="cta-sub">No credit card required</span>
-              </Link>
-            </div>
+            {/* Start Free Trial CTA removed */}
             
             <div className="cta-guarantee">
               <div className="guarantee-badge">
@@ -319,56 +298,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-main">
-              <div className="footer-logo">
-                <i className="fas fa-tractor"></i>
-                <div>
-                  <span className="logo-text">Agri Price</span>
-                  <p className="logo-tagline">Growing Together</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="footer-grid">
-              <div className="footer-column">
-                <h4>Platform</h4>
-                <Link to="/login">Log In</Link>
-                <Link to="/signup">Sign Up</Link>
-              </div>
-              
-              <div className="footer-column">
-                <h4>Roles</h4>
-                <Link to="/signup?type=farmer">For Farmers</Link>
-                <Link to="/signup?type=dealer">For Dealers</Link>
-                <Link to="/signup?type=officer">For Officers</Link>
-              </div>
-              
-              <div className="footer-column">
-                <h4>Support</h4>
-                <Link to="/help">Help Center</Link>
-                <Link to="/contact">Contact Us</Link>
-              </div>
-              
-              <div className="footer-column">
-                <h4>Legal</h4>
-                <Link to="/terms">Terms</Link>
-                <Link to="/privacy">Privacy</Link>
-              </div>
-            </div>
-            
-            <div className="footer-bottom">
-              <div className="copyright">
-                <p>© 2024 Agri Price. Empowering Kenya's Agriculture.</p>
-                <p>Nairobi, Kenya | support@agriprice.co.ke | +254 700 123 456</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      {/* Footer REMOVED - lines 224-270 have been removed */}
     </div>
   );
 }

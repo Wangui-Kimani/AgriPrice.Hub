@@ -90,3 +90,16 @@
 .read-the-docs {
   color: var(--text-secondary);
 }
+/* src/App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1 0 auto; /* This makes the main content grow and push footer down */
+  width: 100%;
+}
+/* App.css - Add these global styles */
+
